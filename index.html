@@ -28,7 +28,7 @@
             <nav class="header-nav">
                 <a href="./index.html" class="logo-header"><span class="logo-web">Web</span>Studio</a>
                 <ul class="navigation">
-                    <li><a class="header-link nav active link" href="./index.html">Студія</a></li>
+                    <li><a class="header-link nav active current link" href="./index.html">Студія</a></li>
                     <li><a class="header-link nav link" href="./portfolio.html">Портфоліо</a></li>
                     <li><a class="header-link nav link" href="">Контакти</a> </li>
                 </ul>
@@ -58,7 +58,17 @@
         <section class="hero">
             <div class="container container-hero">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+            </div>
+            <!--Modal window-->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="modal-btn" type="button" data-modal-close>
+                        <svg width="20" height="20">
+                            <use href="./symbol-defs.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="features section">
@@ -418,7 +428,7 @@
             </div>
         </div>
     </footer>
-
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
