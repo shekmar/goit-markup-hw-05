@@ -447,15 +447,11 @@
 .socials-item {
     width: 44px;
     height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
 }
 
 .socials-link {
-    width: auto;
-    height: auto;
+    width: 44px;
+    height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,10 +460,9 @@
     background-color: var(--light-txt-cl);
 }
 
-.socials-item:hover,
-.socials-item:focus {
-    background-color: #2196f3;
-    cursor: pointer;
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--accent-txt-cl);
 }
 
 .socials-item:hover .social-icon,
@@ -602,9 +597,9 @@
 }
 
 .footer-title {
-    font: "Roboto";
+    font-family: "Roboto";
     font-weight: 700;
-    size: 14px;
+    font-size: 14px;
     color: var(--light-txt-cl);
     text-transform: uppercase;
     margin-top: 0;
@@ -623,11 +618,6 @@
 .socials-item-footer {
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .socials-link-footer {
@@ -644,10 +634,9 @@
     fill: var(--light-txt-cl);
 }
 
-.socials-item-footer:hover,
-.socials-item-footer:focus {
+.socials-link-footer:hover,
+.socials-link-footer:focus {
     background-color: var(--accent-txt-cl);
-    cursor: pointer;
 }
 
 /*portfolio*/
